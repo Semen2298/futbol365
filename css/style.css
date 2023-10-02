@@ -1,0 +1,583 @@
+* {
+    margin: 0; 
+	padding: 0;
+    transition: all 0.5s ease;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    background: #fff;
+    color: #000;
+}
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+button,
+button:hover,
+button:focus {
+	font-family: inherit;
+	outline: none;
+	border: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #000000;
+    font-weight: 600;
+    line-height: normal;
+}
+a {
+	text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+/* Header */
+
+.header {
+    padding: 15px 0;
+}
+.header__logo-wrapper {
+}
+.header__main-wrapper {
+    background: #366FB2;
+
+}
+.header__main-link {
+    display: block;
+    padding: 12px 0;
+
+    color: #FFF;
+    text-transform: uppercase;
+}
+.header__main-link:hover {
+    opacity: 0.6;
+}
+/* main */
+.main {
+}
+.main__bread-crumbs {
+    display: block;
+    color: #636161;
+    margin: 24px 0 46px;
+}
+.main__navigation {
+}
+.main__navigation-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.main__navigation-list {
+    color: #366FB2;
+    text-decoration: underline;
+}
+.main__navigation-item {
+    margin-bottom: 4px;
+}
+.main__navigation-item:last-child {
+    margin-bottom: 0;
+}
+.main__navigation-link {
+
+    color: #366FB2;
+}
+
+.main__event-wrapper {
+    margin: 46px 0;
+}
+.main__event-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.main__event-info-title {
+    font-size: 48px;
+}
+.main__event-info-date {
+    color: #366FB2;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 18px;
+}
+.main__event-info-location {
+    text-align: center;
+    width: 133px;
+    line-height: 22px;
+}
+.main__event-info-gol {
+    line-height: 22px;
+}
+
+.main__event-fc-icon_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 46px 40px 24px;
+}
+.main__event-fc-icon-sparta_wrapper {
+}
+.main__event-fc-icon-score_wrapper {
+    padding: 16px 24px;
+    border-radius: 30px;
+    border: 1px solid #D6D6D6;
+    background: #FFF;
+}
+.main__event-fc-icon-score {
+    display: flex;
+    width: 94px;
+    height: 60px;
+    color: #366FB2;
+    font-size: 48px;
+    line-height: 18px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+.main__event-fc-icon-real_wrapper {
+    padding: 0 60px;
+}
+.main__event-structure-title {
+    display: none;
+}
+.main__event-structure_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main__event-structure {
+    font-size: 24px;
+    line-height: 32px;
+    color: #131313;
+    width: 320px;
+}
+.main__event-structure:last-child {
+    text-align: right;
+}
+
+/* videoreport */
+.videoreport {
+    margin: 46px 0;
+}
+.title {
+    font-size: 40px;
+    margin-bottom: 28px;
+    text-align: center;
+}
+.videoreport__video-wrapper {
+    position: relative;
+    background-image: url("../img/videoreport-img.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 360px;
+    border-radius: 15px;
+}
+.videoreport__video-wrapper::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/play-circle-svgrepo-com.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 124px;
+    height: 124px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+/* reportage */
+.reportage__quote_wrapper {
+    border-radius: 15px;
+    border: 1px solid #D6D6D6;
+    background: #FFF;
+    padding: 12px 24px;
+}
+.reportage__quote_wrapper-table {
+    display: none;
+}
+.reportage__quote_quotation {
+    display: flex;
+}
+.reportage__quote_text {
+}
+.quotation {
+    display: block;
+    background-image: url(../img/“.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 17%;
+    height: 28px;
+    margin-right: 8px;
+}
+.reportage__quote-autor {
+    display: block;
+    color: #366FB2;
+    font-size: 20px;
+    text-align: right;
+}
+
+.reportage__article {
+    margin-top: 34px;
+}
+.reportage__img-wrapper {
+    position: relative;
+    float: right;
+}
+.reportage__img-1 {
+    width: 272px;
+    height: 444px;
+    background-image: url("../img/reportage-img1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin: 0 113px 258px 20px;
+}
+.reportage__img-2 {
+    position: absolute;
+    width: 272px;
+    height: 444px;
+    background-image: url("../img/reportage-img2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    top: 258px;
+    left: 113px;
+}
+.reportage__article-paragraph {
+    margin-bottom: 12px;
+}
+.reportage__article-paragraph:last-child {
+    margin-bottom: 0;
+}
+.reportage__article-paragraph-blue {
+    color: #366FB2;
+}
+
+/* After Game */
+.aftergame__quote-wrapper {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 1px solid #D6D6D6;
+    background: #FFF;
+    padding: 16px;
+    font-size: 24px;
+    margin-bottom: 28px;
+}
+.aftergame__dialogue-wrapper {
+    margin-bottom: 24px;
+}
+.aftergame__dialogue {
+    margin-bottom: 12px;
+}
+.aftergame__dialogue:last-child {
+    margin-bottom: 0;
+}
+.aftergame__dialogue-semibold {
+    font-weight: 600;
+}
+.aftergame__quotes-wrapper {
+    color: #366FB2;
+}
+.aftergame__quote {
+    margin-bottom: 8px;
+}
+.aftergame__quote-autor {
+    text-align: right;
+    margin-bottom: 12px;
+}
+.aftergame__quote-autor:last-child {
+    margin-bottom: 0px;
+}
+
+.standings, .program, .aftergame, .next-match, .add-material {
+    padding: 46px 0;
+}
+.standings__table tr td {
+    text-align: center;
+    padding: 10px 26.5px;
+    border: 0.5px solid #B9B9B9;
+    font-size: 12px;
+}
+.standings__table tr th {
+    text-align: center;
+    padding: 10px 26.5px;
+    color: #FFF;
+    font-size: 16px;
+    border: 0.5px solid #B9B9B9;
+    background: rgba(54, 111, 178, 0.60);
+}   
+.program-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date-time-wrap {
+    color: #9F9F9F; 
+    font-size: 12px;
+}
+.team {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    align-items: center;
+    gap: 8px;
+    text-decoration-line: underline;
+    margin: 0 auto;
+}
+.next-match-line {
+    display: flex;
+    align-items: center;
+}
+
+/* meeting-history */
+.meeting-history__quote {
+    border-radius: 15px;
+    border: 1px solid #D6D6D6;
+    margin-bottom: 28px;
+}
+.meeting-history__quote-text {
+    padding: 16px;
+    text-align: center;
+    line-height: 18px;
+}
+
+/* Add Material */
+.add-material-title {
+    margin-bottom: 16px;
+}
+.add-material-text {
+    line-height: 18px;
+    text-align: center;
+}
+.add-material__form_input {
+    font-family: "Inter", sans-serif;
+    width: 395px;
+    padding: 22px 0 21px 19px;
+    border-radius: 15px;
+    border: 1px solid #D9D9D9;
+    background: #F7F7F7;
+    margin: 28px 0;
+}
+.add-material__form-send-massange {
+    position: relative;
+    font-family: "Inter", sans-serif;
+    border: 1px solid #D9D9D9;
+    background: #F7F7F7;
+    border-radius: 15px;
+    width: 682px;
+    height: 167px;
+    padding-top: 22px;
+    padding-left: 16px;
+    color: #A2A2A2;
+}
+.add-material__form_input-file {
+    /* position: absolute;
+    bottom: 15px;
+    right: 20px; */
+    border-radius: 15px;
+    background: rgba(54, 111, 178, 0.60);
+    color: #FFF;
+    padding: 12px;
+}
+
+/* Notes */
+.notes {
+    padding: 46px 0;
+}
+.notes__title {
+    font-size: 24px;
+    text-decoration-line: underline;
+    margin-bottom: 16px;
+}
+.notes__list {
+    color: #366FB2;
+    text-decoration-line: underline;
+}
+.notes__item {
+    margin-bottom: 15px;
+}
+.notes__item:last-child {
+    margin-bottom: 0;
+}
+.link__title {
+    margin: 46px 0 16px;
+}
+
+/*Footer */
+.footer {
+    background: #366FB2;
+    overflow: hidden;
+}
+.footer-text {
+    display: block;
+    padding: 58px 0 74px;
+    color: #FFF;
+    text-align: center;
+    font-size: 11px;
+}
+.footer-text::before {
+    content: "";
+    display: block;
+    border: 1px solid #fff;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 960px) {
+    .container {
+        width: 800px;
+    }
+    .main__event-fc-icon-sparta_wrapper img {
+        width: 216px;
+        height: 141px;
+    }
+    .main__event-fc-icon-real_wrapper {
+        padding: 0;
+    }
+    .main__event-fc-icon-real_wrapper img {
+        width: 165px;
+        height: 231.316px;
+        padding: 0 24px;
+    }
+    .main__event-fc-icon-score_wrapper {
+        padding: 12px 18px;
+    }
+    .main__event-fc-icon-score {
+        font-size: 36px;
+    }
+    .main__event-structure {
+        font-size: 20px;
+    }
+    .title {
+        font-size: 36px;
+    }
+    .videoreport__video-wrapper img {
+        width: 614px;
+        height: 360px;
+        margin: 0 auto;
+    }
+    .reportage__img-wrapper {
+        float: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .reportage__img-1 {
+        width: 290px;
+        height: 324px;
+        margin: 0;
+    }
+    .reportage__img-2 {
+        width: 290px;
+        height: 324px;
+        position: static;
+    }
+    .reportage__quote_wrapper {
+        display: none;
+    }
+    .reportage__quote_wrapper-table {
+        display: block;
+        margin: 24px 0;
+    }
+    .quotation {
+        width: 24%;
+    }
+    .program-img-wrapper img {
+        width: 190px;
+        height: 214.067px;
+    }
+}
+@media (max-width: 767px) {
+	.container {
+		max-width: 540px;
+	}
+    .header__logo-img {
+        width: 207px;
+        height: 84px;
+    }
+    .main__event-info-title, .main__event-info-date {
+        font-size: 24px;
+        text-align: center;
+    }
+    .main__event-info-location, .main__event-info-gol {
+        font-size: 14px;
+    }
+    .main__event-fc-icon_wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .main__event-fc-icon-sparta_wrapper img {
+        width: 160px;
+        height: 104.444px;
+    }
+    .main__event-fc-icon-real_wrapper img {
+        width: 120px;
+        height: 168.23px;
+        padding: 0 16px;
+    }
+    .main__event-structure_wrapper{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .main__event-structure {
+        text-align: center;
+    }
+    .main__event-structure:last-child {
+        text-align: center;
+    }
+    .main__event-structure-title {
+        display: block;
+        color: #366FB2;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .standings__table tr td {
+        padding: 10px 7px;
+        font-size: 10px;
+    }
+    .standings__table tr th {
+        padding: 10px 7px;
+        font-size: 12px;
+    }
+    .program-img-wrapper {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .program-img-wrapper img {
+        width: 320px;
+        height: 360px;
+    }
+    .add-material__form-send-massange {
+        width: 100%;
+    }
+    .add-material__form_input, .add-material__form-send-massange {
+        width: 90%;
+    }
+    .quotation {
+        height: 18px;
+        width: 100%;
+    }
+}
+
+/* Extra small: 480px - 575px */
+@media (max-width: 575px) {
+	.container {
+		width: 95%;    
+	}
+    .reportage__img-wrapper {
+        flex-direction: column;
+    }
+    .next-match-line {
+        flex-direction: column;
+    }
+}
