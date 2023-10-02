@@ -37,8 +37,6 @@ a {
 .header {
     padding: 15px 0;
 }
-.header__logo-wrapper {
-}
 .header__main-wrapper {
     background: #366FB2;
 
@@ -54,14 +52,10 @@ a {
     opacity: 0.6;
 }
 /* main */
-.main {
-}
 .main__bread-crumbs {
     display: block;
     color: #636161;
     margin: 24px 0 46px;
-}
-.main__navigation {
 }
 .main__navigation-title {
     font-size: 24px;
@@ -114,8 +108,6 @@ a {
     align-items: center;
     justify-content: space-between;
     margin: 46px 40px 24px;
-}
-.main__event-fc-icon-sparta_wrapper {
 }
 .main__event-fc-icon-score_wrapper {
     padding: 16px 24px;
@@ -203,11 +195,9 @@ a {
 .reportage__quote_quotation {
     display: flex;
 }
-.reportage__quote_text {
-}
 .quotation {
     display: block;
-    background-image: url(../img/“.svg);
+    background-image: url(../img/quotation.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 17%;
