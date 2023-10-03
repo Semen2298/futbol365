@@ -1,7 +1,7 @@
 * {
     margin: 0; 
 	padding: 0;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease 0s;
 }
 body {
     font-family: 'Open Sans', sans-serif;
@@ -43,19 +43,33 @@ a {
 }
 .header__main-link {
     display: block;
-    padding: 12px 0;
+    padding: 12px 5px;
 
     color: #FFF;
     text-transform: uppercase;
 }
 .header__main-link:hover {
-    opacity: 0.6;
+    background: #285385;
+    text-decoration: underline;
+}
+.header__main-list {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+.header__main-item {
+    list-style-type: none;
 }
 /* main */
-.main__bread-crumbs {
-    display: block;
+.main__bread-crumbs  {
+    display: flex;
     color: #636161;
     margin: 24px 0 46px;
+}
+.main__bread-crumbs a {
+    display: block;
+    margin-right: 5px;
+    color: #636161;
 }
 .main__navigation-title {
     font-size: 24px;
@@ -422,6 +436,150 @@ a {
     margin-bottom: 15px;
 }
 
+/* Football */
+
+.football {
+    font-family: "Inter", sans-serif;
+    margin-bottom: 42px;
+}
+.football__title {
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+.football__last-articles {
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 24px 0;
+    display: block;
+}
+.football__article {
+    width: 235px;
+}
+.football__article-img {
+    background-repeat: no-repeat;
+    width: 235px;
+    height: 166px;
+    border-radius: 15px;
+}
+.football__articles-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.mbape {
+    background-image: url("../img/mbape.png");
+}
+.messi {
+    background-image: url("../img/messi.png");
+}
+.neimar {
+    background-image: url("../img/neimar.png");
+}
+.ronaldo {
+    background-image: url("../img/ronaldo.png");
+}
+.football__article-img-span {
+    color: #FFF;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 15px;
+    background: #CA0000;
+    padding: 6px 24px;
+}
+.football__article-icons-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0 12px;
+}
+.football__article-icon {
+    display: inherit;
+    align-items: center;
+    gap: 4px;
+}
+.football__article-icon span {
+    color: #366FB2;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 500;
+}
+.football__article-title {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.football__article-text {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* FAQ */
+
+.faq {
+    margin-bottom: 42px;
+}
+details.faq__details {
+    border-radius: 30px;
+    border: 1px solid #B9B9B9;
+    background: #FFF;
+    padding: 12px 24px;
+    margin: 32px 0;
+}
+summary.faq__summary::before {
+    content: "";
+    display: block;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 18px;
+    transition: all 0.5s ease 0s;
+}
+summary.faq__summary {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    list-style-type: none;
+    cursor: pointer;
+}
+.faq__summary-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 12px;
+    margin-top: 16px;
+}
+.faq__summary-country {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.faq__summary-country span {
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+details[open] summary.faq__summary::before {
+    transform: rotate(0.5turn);
+    transition: all 0.5s ease 0s;
+}
+details[open] {
+}
+.faq__summary-alphabet-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+.faq__summary-alphabet {
+    text-decoration: underline;
+}
+
 @media (max-width: 960px) {
     .container {
         width: 800px;
@@ -485,6 +643,13 @@ a {
     .program-img-wrapper img {
         width: 190px;
         height: 214.067px;
+    }
+    .football__articles-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 24px;
+    }
+    .faq__summary-wrapper {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 @media (max-width: 767px) {
@@ -557,6 +722,21 @@ a {
         height: 18px;
         width: 100%;
     }
+    .football__articles-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        row-gap: 24px;
+    }
+    .faq__summary-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .faq__summary-country img {
+        width: 24px;
+        height: 24px;
+    }
+    .faq__summary-country span {
+        font-size: 12px;
+    }
 }
 
 /* Extra small: 480px - 575px */
@@ -569,5 +749,11 @@ a {
     }
     .next-match-line {
         flex-direction: column;
+    }
+    .football__articles-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .faq__summary-wrapper {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
